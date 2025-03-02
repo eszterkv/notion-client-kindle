@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vercel": "^8.1.0",
     "astro": "^5.4.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
   }
 }
