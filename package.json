@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@astrojs/vercel": "^8.1.0",
-    "astro": "^5.4.1"
+    "@notionhq/client": "^2.2.16",
+    "astro": "^5.4.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "standard": "^17.1.2"

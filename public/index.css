@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+header,
+main {
+  margin-bottom: 2rem;
+}

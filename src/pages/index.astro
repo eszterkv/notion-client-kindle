@@ -1,8 +1,19 @@
 ---
+import _ from 'lodash'
 import Layout from '../layouts/layout.astro'
+import { getPages } from '../lib/notion'
 
+const pages = await getPages()
 ---
 
 <Layout>
-  hello world
+  <ul>
+    {pages.map(page => 
+      <li>
+        <a href=`/${page.id}`>
+          {_.get(page, 'properties.title.title.0.text.content')}
+        </a>
+      </li>
+    )}
+  </ul>
 </Layout>
