@@ -28,8 +28,10 @@ const content = await getContent(id)
   </header>
   <main set:html={render(content)} />
   <footer>
-    <a href={_.get(page, 'url')}>
-      view on notion
-    </a>
+    <small>
+      <a href={_.get(page, 'url')}>
+        view on notion
+      </a>
+    </small>
   </footer>
 </Layout>
